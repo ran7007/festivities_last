@@ -108,17 +108,46 @@ for (let i = 1; i <= 4; i++) {
     const clone = wrapper.children[i - 1].cloneNode(true); // 슬라이드 복제
     wrapper.appendChild(clone);
 }
+document.addEventListener('DOMContentLoaded', () => {
+    const soc_sns = new Swiper('.soc_sns', {
+        slidesPerView: 4,
+        loop: true,
+        breakpoints: {
+            0: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+                centeredSlides: true
+            },
+            500: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+                centeredSlides: true
+            },
+            900: {
+                slidesPerView: 2.8,
+                spaceBetween: 10,
+                centeredSlides: true
+            },
 
-const soc_sns = new Swiper('.soc_sns', {
-    slidesPerView: 4,
-    /* centeredSlides: true, */
-    loop: true,
-    autoplay: {
-        delay: 1900,
-        disableOnInteraction: false,
-    },
-    freeMode: false
+            1200: {
+                slidesPerView: 3,
+                spaceBetween: 10,
+                centeredSlides: true
+            },
+            1620: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+                centeredSlides: true
+            },
+        },
+        autoplay: {
+            delay: 1900,
+            disableOnInteraction: false,
+        },
+        freeMode: false
+    });
 });
+
 
 //지도
 
