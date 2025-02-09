@@ -114,30 +114,30 @@ document.addEventListener('DOMContentLoaded', () => {
         loop: true,
         breakpoints: {
             0: {
-                slidesPerView: 2,
+                slidesPerView: 1,
                 spaceBetween: 10,
-                centeredSlides: true
+                centeredSlides: false
             },
-            500: {
-                slidesPerView: 2,
+            800: {
+                slidesPerView: 1.5,
                 spaceBetween: 10,
-                centeredSlides: true
+                centeredSlides: false
             },
             900: {
-                slidesPerView: 2.8,
+                slidesPerView: 2,
                 spaceBetween: 10,
-                centeredSlides: true
+                centeredSlides: false
             },
 
             1200: {
                 slidesPerView: 3,
                 spaceBetween: 10,
-                centeredSlides: true
+                centeredSlides: false
             },
             1620: {
                 slidesPerView: 4,
                 spaceBetween: 20,
-                centeredSlides: true
+                centeredSlides: false
             },
         },
         autoplay: {
