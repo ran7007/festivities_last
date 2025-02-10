@@ -30,10 +30,10 @@ body { line-height: 1.5; color: #323232; font-size: 1.6rem; overflow-X: hidden;}
 .mgnb ul { padding: 0; margin: 0; opacity: 0; transform: translateY(30px);  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; }
 .mgnb.active ul {opacity: 1;  transform: translateY(0); }
 
-.mgnb li { font-size: 2rem; padding: 20px 0; transition: all 2s ease-in-out; border-bottom: 1px solid rgba(0,0,0,0.19); width: 80%; margin-left: 30px;}
+.mgnb li { font-size: 2rem; padding: 20px 0; transition: all 0.5s; border-bottom: 1px solid rgba(0,0,0,0.19); width: 80%; margin-left: 30px;}
 .mgnb li:nth-child(2) {padding-top: 100px;}
 .mgnb.active li {animation: slideUp 2s ease forwards;}
-.mgnb li:hover {color: #ED896C; transition: all 0.5s; animation: size 1s ease forwards; }
+.mgnb li:hover {color: #ED896C; font-size: 2.5rem; }
 
 .mgnb .logo { opacity: 0; transform: translateY(-20px); position: absolute; top: -1px; border: none;}
 .mgnb .logo img {max-width: 120px; height: auto;}
@@ -365,12 +365,12 @@ body { line-height: 1.5; color: #323232; font-size: 1.6rem; overflow-X: hidden;}
 
 /* 내용 */
 .history .his_con_top, .history .his_con_bottom  {padding-bottom: 70px; position: relative; display: flex; flex-wrap: wrap;}
-.history .his_con_top dl, .his_con_bottom dl {display: flex; overflow: hidden; position: relative;}
+.history .his_con_top dl, .his_con_bottom dl {display: flex; overflow: hidden; position: relative; border-radius: 20px;}
 .history .his_con_top dl {max-width: 520px; height: auto;}
 .history .his_con_bottom dl { max-width: 813px; height: auto; position: relative;}
 .history .his_con_top dd , .history .his_con_bottom dd {position: absolute; padding: 30px 20px;}
 
-.history .his_con_bottom img, .his_con_top img { width: 100%; filter: brightness(60%); position: relative; z-index: 1; transition: all 0.5s;}
+.history .his_con_bottom img, .his_con_top img { width: 100%; filter: brightness(60%); position: relative; z-index: 1; transition: all 0.5s; object-fit: cover;}
 .history .his_con_top .his_text, .history .his_con_bottom .his_text {  position: absolute; z-index: 2; text-align: left; line-height: 1.6; word-wrap: break-word; transition: all 0.5s; word-break: keep-all; opacity: 0;} 
 .history .his_con_top .his_text span, .history .his_con_bottom .his_text span  { color:#FBDC3E;}
 .history .his_con_top .his_more , .history .his_con_bottom .his_more {position: absolute;  z-index: 2; font-size: 1; padding: 10px 30px; border-radius: 50px; border: 1px solid transparent; transition: all 0.5s; bottom:10%; border: 1px solid #fff; margin-left: 15px; opacity: 0;}
@@ -418,9 +418,12 @@ body { line-height: 1.5; color: #323232; font-size: 1.6rem; overflow-X: hidden;}
 .social .swiper-slide {flex: 0 0 auto; }
 .social .swiper-slide img {box-shadow: 0 0px 10px rgba(0,0,0,0.19), 0 0px 6px rgba(0,0,0,0.23); border-radius: 30px;}
 .social .button { display: flex; align-items: center; justify-content: center; gap: 20px; padding-top: 20px;}
-.social .button .but_lift, .but_right {display: inline-block; border: 1px solid #fff; border-radius: 50px; padding: 15px 0; text-align: center; color: #ED896C; font-weight: 600; font-size: 1.5rem;  width: 250px; cursor: pointer;}
-.social .button .but_lift {background: #fff url(../img/arrow.png)no-repeat  center right 46px; background-size: 20px;}
-.social .button .but_right {background: #fff url(../img/arrow.png)no-repeat  center right 60px; background-size: 20px; }
+.social .button .but_lift, .but_right {display: inline-block; border: 1px solid #fff; border-radius: 50px; padding: 15px 30px; color: #ED896C; font-weight: 600; font-size: 1.5rem;  width: 250px; cursor: pointer;}
+.social .button .but_lift {background: #fff url(../img/arrow.png)no-repeat  right 30px center / 20px;/* x,y순서 값입력 안하면 y는 자동 센터 */ transition: all 0.5s;}
+.social .button .but_lift:hover {background: #fff url(../img/arrow.png)no-repeat  right 20px center / 20px;}
+.social .button .but_right {background: #fff url(../img/arrow.png)no-repeat  right 30px center  / 20px; transition: all 0.5s;}
+.social .button .but_right:hover {background: #fff url(../img/arrow.png)no-repeat  right 20px center / 20px;}
+
 
 @media(max-width:1200px) {
   .social .swiper-slide {display: flex; justify-content: center; align-items: center;}
