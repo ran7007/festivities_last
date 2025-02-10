@@ -1,3 +1,11 @@
+//스크롤
+$(".gnb li a").click(function () {
+    $("html,body").animate({ scrollTop: $(this.hash).offset().top }, 500);
+});
+
+
+
+
 
 //햄버튼
 document.addEventListener("DOMContentLoaded", () => {
@@ -190,3 +198,4 @@ document.getElementById('changeMapImageLink').addEventListener('click', function
         linkText.style.color = '';
     }
 });
+
