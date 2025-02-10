@@ -146,6 +146,11 @@ body { line-height: 1.5; color: #323232; font-size: 1.6rem; overflow-X: hidden;}
   .main .main_text p {font-size: 1.5rem;}
 }
 
+@media (max-width:500px) {
+  .main .main_text h2 { font-size: 6rem; line-height: 1.2;}
+  .main .main_text p {font-size: 1.2rem;}
+}
+
 /* section2 */
 .introduction { position: relative; max-width: 2000px; margin: 0 auto; } 
 .introduction .back-img { width: 100%; position: absolute; top: 88vh; height: 300vh;}
@@ -201,6 +206,10 @@ body { line-height: 1.5; color: #323232; font-size: 1.6rem; overflow-X: hidden;}
    .top_right {flex-wrap: wrap;}
    .top_right .card, .intr_card_botton .card { flex: 1 1 100%; max-width: 100%; height: auto;}
     .introduction .intr_card dl .more {right: 30px; bottom: auto;}
+ }
+
+ @media (max-width: 500px) {
+  .card {width: 30%;}
  }
 
 /* 배경 */
