@@ -4,18 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>한산대첩 축제</title>
+    <title>제64회 통영한산대첩축제</title>
     <link rel="shortcut icon" href="img/1x/logo.png" type="image/x-icon">
+    <!-- opengrapg -->
+    <meta property="og:title" content="제64회 통영한산대첩축제">
+    <meta property="og:image" content="img/opengrapg_img.png">
+    <meta property="og:description" content="쌍룡의비상 ; 구국의 통영 바다">
+    <meta property="og:url" content="https://ran7007.github.io/festivities_last/">
+    <meta property="og:type" content="website">
+
     <!-- font -->
     <link rel="stylesheet" href="css/font.css">
     <!-- css -->
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/main.css">
     <!-- js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
     <script charset="UTF-8" class="daum_roughmap_loader_script"
         src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
@@ -26,14 +31,14 @@
     <div id="wrap">
         <header id="header">
             <div class="inner">
-                <h1><a href="#"><img src="img/logo(wh).png" alt="한산대첩축제"></a></h1>
+                <h1><a href="#"><img src="img/logo_wh.png" alt="한산대첩축제"></a></h1>
                 <div class="right">
                     <nav>
                         <ul class="gnb">
                             <li><a href="#introduction">축제소개</a></li>
-                            <li><a href="#schedule">일정안내</a></li>
+                            <li><a href="#schedule_title">일정안내</a></li>
                             <li><a href="#history">한산대첩에 관하여</a></li>
-                            <li><a href="#map">오시는 길</a></li>
+                            <li><a href="#map_title">오시는 길</a></li>
                         </ul>
 
                     </nav>
@@ -155,7 +160,7 @@
                 <img src="img/back_1-2.png" alt="배경" class="img_back1">
                 <img src="img/back_2.png" alt="통영바닷가" class="img_1-1">
 
-                <section class="schedule">
+                <section class="schedule" id="schedule_title">
                     <div class="inner">
                         <div class="sch_top">
                             <h2>행사일정 안내</h2>
@@ -369,7 +374,7 @@
                     </script>
                 </div>
                 <div class="inner">
-                    <div class="map_top">
+                    <div class="map_top" id="map_title">
                         <div class="map_lift">
                             <h2>오시는길</h2>
                             <select name="select_map" id="select_map">
@@ -442,6 +447,8 @@
                     </div><!-- right -->
                 </div><!-- inner -->
             </footer>
+
+            <a href="#" class="gotop"><img src="img/gotop.png" alt="맨위로바로가기"></a>
 
 
 
