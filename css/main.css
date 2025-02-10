@@ -491,7 +491,7 @@ select { appearance: none; -webkit-appearance: none;  -moz-appearance: none;  ba
 }
 
 @media (max-width:480px) {
-  .map .map_top {padding: 0 10px; transform: translateX(-10%);}
+  .map .map_top {padding: 0 10px; transform: translateX(-5%);}
    .map .map_top .map_lift h2 {font-size: 1.5rem;}
   .map .map_top .map_lift #select_map { font-size: 0.8rem;}
   .map .map_top .map_right { font-size: 0.8rem ;}
