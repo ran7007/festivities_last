@@ -209,8 +209,7 @@ body { line-height: 1.5; color: #323232; font-size: 1.6rem; overflow-X: hidden;}
  }
 
  @media (max-width: 480px) {
-  .introduction .back-img {top:121vh}
-  .introduction .intr_card {padding-top : 99vh}
+  .introduction .back-img {top:110vh}
    .introduction .intr_card_top img, .introduction .intr_card_botton dt img {width: 40%;}
  }
 
@@ -492,7 +491,7 @@ select { appearance: none; -webkit-appearance: none;  -moz-appearance: none;  ba
 }
 
 @media (max-width:480px) {
-  .map .map_top  .map {padding: 0 10px; transform: translateX(-5%);}
+  .map .map_top {padding: 0 10px; transform: translateX(-10%);}
    .map .map_top .map_lift h2 {font-size: 1.5rem;}
   .map .map_top .map_lift #select_map { font-size: 0.8rem;}
   .map .map_top .map_right { font-size: 0.8rem ;}
